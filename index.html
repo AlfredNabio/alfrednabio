@@ -1,154 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Alfred Nabio - Graduate School Portfolio</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alfred Nabio's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <header>
+        <div class="container">
+            <h1>Alfred Nabio</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#certification">Certification</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-  <header>
-    <div class="header-content">
-      <h1>Alfred Nabio</h1>
-      <p>BSc. Computer Science - First Class Honours | Aspiring Researcher</p>
-      <nav>
-        <a href="#about">About</a>
-        <a href="#experience">Experience</a>
-        <a href="#projects">Projects</a>
-        <a href="#skills">Skills</a>
-        <a href="#certifications">Certifications</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </div>
-    <button id="dark-mode-toggle">Toggle Dark Mode</button>
-  </header>
+    <section id="hero">
+        <div class="hero-content">
+            <h1>Welcome to My Portfolio</h1>
+            <p>Computer Science Graduate | AI Enthusiast | Cybersecurity Specialist</p>
+        </div>
+    </section>
 
-  <section id="hero">
-    <div class="hero-content">
-      <h1>Alfred Nabio</h1>
-      <p>First Class Graduate in Computer Science | Specializing in AI, Cybersecurity, and Machine Learning</p>
-    </div>
-  </section>
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>A dynamic, result-oriented, and productive first-class graduate of Computer Science with strong research and analytical skills. Fast learner and open-minded team player with a passion for academia and innovative research.</p>
+        </div>
+    </section>
 
-  <!-- About Section -->
-  <section id="about">
-    <h2>About Me</h2>
-    <p>
-      I am Alfred Nabio, a dynamic first-class graduate of Computer Science from GIMPA with a GPA of 3.77/4.0.
-      My interests lie in Artificial Intelligence, Cybersecurity, and Machine Learning. With a solid foundation
-      in software development, 3D modeling, and research, I am passionate about contributing to innovative
-      research and academic excellence.
-    </p>
-    <p>
-      My final year project, "MuTalk: A Sign Language to Speech Conversion System," highlights my ability to merge
-      Machine Learning, computer vision, and software development to create real-world solutions.
-    </p>
-  </section>
+    <section id="education">
+        <div class="container">
+            <h2>Education</h2>
+            <p><strong>Bachelor of Science in Computer Science</strong><br>
+                Ghana Institute of Management and Public Administration (GIMPA)<br>
+                Final Grade: First Class Honors, GPA: 3.77/4.0<br>
+                September 2019 - July 2023</p>
+            <p><strong>Final Year Project</strong>: Design and Implementation of MuTalk, a sign language to speech conversion system.</p>
+        </div>
+    </section>
 
-  <!-- Experience Section -->
-  <section id="experience">
-    <h2>Teaching & Work Experience</h2>
-    <div class="experience-card">
-      <h3>Teaching Assistant</h3>
-      <p><strong>School of Technology, GIMPA</strong> | September 2023 - Present</p>
-      <ul>
-        <li>Graded assignments, quizzes, and lab reports with detailed feedback.</li>
-        <li>Assisted students in mastering course content and exam preparation.</li>
-        <li>Led discussion groups and lab sessions to reinforce learning.</li>
-      </ul>
-    </div>
+    <section id="experience">
+        <div class="container">
+            <h2>Experience</h2>
+            <ul>
+                <li><strong>Teaching Assistant</strong>, School of Technology, GIMPA, September 2023 - Present</li>
+                <li><strong>Research Assistant</strong>, GIMPA, September 2023 - Present</li>
+                <li><strong>Telephone Technician Assistant</strong>, GIMPA, 2019 - August 2023</li>
+            </ul>
+        </div>
+    </section>
 
-    <div class="experience-card">
-      <h3>Research Assistant</h3>
-      <p><strong>GIMPA</strong> | September 2023 - Present</p>
-      <ul>
-        <li>Automated data collection processes, reducing manual workload by 30%.</li>
-        <li>Produced detailed reports guiding research direction and resource allocation.</li>
-        <li>Maintained research database systems, ensuring data security and retrieval efficiency.</li>
-      </ul>
-    </div>
+    <section id="skills">
+        <div class="container">
+            <h2>Skills & Competencies</h2>
+            <ul>
+                <li>Web Development: HTML, CSS, JavaScript</li>
+                <li>Software Development: Android Studio, Git</li>
+                <li>3D Modelling and Simulation: Blender, Webots</li>
+                <li>Programming Languages: Python, Java, MATLAB, C++</li>
+                <li>Machine Learning Libraries: TensorFlow, Keras, Scikit-Learn, PyTorch</li>
+                <li>Data Analysis: Pandas, NumPy, SciPy</li>
+                <li>Computer Vision: OpenCV, Dlib</li>
+                <li>Development Tools: Git, Jupyter Notebooks, Google Colab, Linux</li>
+            </ul>
+        </div>
+    </section>
 
-    <div class="experience-card">
-      <h3>Telephone Technician Assistant</h3>
-      <p><strong>GIMPA</strong> | 2019 - August 2023</p>
-      <ul>
-        <li>Tested and optimized telephone systems to ensure optimal functionality.</li>
-        <li>Analyzed network performance and executed improvements on switching systems.</li>
-        <li>Maintained high-quality telecommunications service delivery through proficient system testing.</li>
-      </ul>
-    </div>
-  </section>
+    <section id="certification">
+        <div class="container">
+            <h2>Certification</h2>
+            <p>Certified in CyberSecurity (CC)</p>
+        </div>
+    </section>
 
-  <!-- Projects Section -->
-  <section id="projects">
-    <h2>Projects</h2>
-    <div class="project-card">
-      <h3>MuTalk: Sign Language to Speech Conversion</h3>
-      <p>
-        Developed a system that uses computer vision and Machine Learning to convert sign language gestures into speech,
-        bridging communication gaps for the hearing-impaired.
-      </p>
-      <a href="https://github.com/your-github/MuTalk" target="_blank">View Project</a>
-    </div>
+    <footer>
+        <div class="container">
+            <p>Contact me: alfred.nabio18@gmail.com | +233-544-047147</p>
+        </div>
+    </footer>
 
-    <div class="project-card">
-      <h3>Expense Tracker App</h3>
-      <p>An Android app for tracking and managing daily expenses and budgets.</p>
-      <a href="https://github.com/your-github/ExpenseTracker" target="_blank">View Project</a>
-    </div>
-  </section>
-
-  <!-- Skills Section -->
-  <section id="skills">
-    <h2>Skills and Competencies</h2>
-    <ul>
-      <li>Programming Languages: Python, Java, C++, MATLAB</li>
-      <li>Web Development: HTML, CSS, JavaScript</li>
-      <li>Machine Learning Libraries: TensorFlow, Keras, Scikit-Learn, PyTorch</li>
-      <li>Data Analysis: Pandas, NumPy, SciPy</li>
-      <li>3D Modelling: Blender, Webots</li>
-      <li>Software Development: Android Studio, Git</li>
-    </ul>
-  </section>
-
-  <!-- Certifications Section -->
-  <section id="certifications">
-    <h2>Certifications</h2>
-    <p>
-      <strong>Certified in Cybersecurity (CC)</strong> - August 2024 | ISC2
-    </p>
-  </section>
-
-  <!-- Awards Section -->
-  <section id="awards">
-    <h2>Awards and Scholarships</h2>
-    <ul>
-      <li>Best Graduating Student, Department of Computer Science, GIMPA - 2023</li>
-      <li>Dean’s List for 8/8 semesters</li>
-      <li>GIMPA Staff Development Scholarship (2019-2023) - Amount: 40,000GHS</li>
-    </ul>
-  </section>
-
-  <!-- Contact Section -->
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:alfred.nabio18@gmail.com">alfred.nabio18@gmail.com</a></p>
-    <p>Phone: +233-544-047147</p>
-  </section>
-
-  <footer>
-    <p>&copy; 2024 Alfred Nabio</p>
-  </footer>
-
-  <script>
-    // Dark Mode Toggle
-    const toggleButton = document.getElementById('dark-mode-toggle');
-    const body = document.body;
-    toggleButton.addEventListener('click', () => {
-      body.classList.toggle('dark-mode');
-    });
-  </script>
-
+    <script src="scripts.js"></script>
 </body>
 </html>
