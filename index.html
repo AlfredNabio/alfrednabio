@@ -4,19 +4,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Alfred Nabio - Graduate School Portfolio</title>
-  <!-- Link to the external stylesheet -->
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-  <!-- Header Section with navigation -->
+  <!-- Header Section -->
   <header>
     <div class="header-content">
       <h1>Alfred Nabio</h1>
       <p>BSc. Computer Science - First Class Honours</p>
       <nav>
         <a href="#about">About</a>
-        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#awards">Awards</a>
         <a href="#skills">Skills</a>
         <a href="#certifications">Certifications</a>
         <a href="#contact">Contact</a>
@@ -25,56 +25,75 @@
     <button id="dark-mode-toggle">Toggle Dark Mode</button>
   </header>
 
-  <!-- Hero Section -->
-  <section id="hero">
-    <div class="hero-content">
-      <h1>Alfred Nabio</h1>
-      <p>First Class Graduate in Computer Science | Aspiring Researcher in Cybersecurity</p>
-    </div>
-  </section>
-
   <!-- About Section -->
   <section id="about">
     <h2>About Me</h2>
     <p>
-      I am Alfred Nabio, a first-class graduate in Computer Science from GIMPA. I graduated with a GPA of 3.77/4.0.
-    </p>
-    <p>
-      I have a passion for algorithms, software development, and cybersecurity, and I’m eager to contribute to the field through graduate research.
+      I am Alfred Nabio, a first-class graduate in Computer Science from GIMPA, passionate about AI, cybersecurity, and research. I graduated with a GPA of 3.77/4.0 and have participated in several conferences and workshops.
     </p>
   </section>
 
-  <!-- Projects Section -->
-  <section id="projects">
-    <h2>Projects</h2>
-    <div class="project-card">
-      <h3>Robotic Navigation Simulation</h3>
-      <p>Developed a robot that autonomously navigates through a maze using sensor data.</p>
-      <a href="https://github.com/username/project-link" target="_blank">View Project</a>
+  <!-- Experience Section -->
+  <section id="experience">
+    <h2>Experience</h2>
+    <div class="experience-card">
+      <h3>Teaching Assistant</h3>
+      <p>School of Technology, GIMPA (Sep 2023 - Present)</p>
+      <ul>
+        <li>Graded assignments, quizzes, and exams, providing detailed feedback to students.</li>
+        <li>Assisted students in understanding course content and preparing for exams.</li>
+        <li>Led smaller discussion groups and lab sessions.</li>
+      </ul>
     </div>
 
-    <div class="project-card">
-      <h3>Expense Tracker App</h3>
-      <p>An Android app for tracking and managing daily expenses and budgets.</p>
-      <a href="https://github.com/username/project-link" target="_blank">View Project</a>
+    <div class="experience-card">
+      <h3>Research Assistant</h3>
+      <p>GIMPA (Sep 2023 - Present)</p>
+      <ul>
+        <li>Automated data collection processes from online surveys and external databases.</li>
+        <li>Produced reports and summaries for faculty members.</li>
+        <li>Maintained the research department's database systems.</li>
+      </ul>
     </div>
+
+    <div class="experience-card">
+      <h3>Telephone Technician Assistant</h3>
+      <p>GIMPA (2019 - Aug 2023)</p>
+      <ul>
+        <li>Conducted tests on telephone systems to identify transmission faults.</li>
+        <li>Operated computerized testing systems and analyzed test results.</li>
+        <li>Contributed to telecommunications infrastructure maintenance.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Awards Section -->
+  <section id="awards">
+    <h2>Awards and Scholarships</h2>
+    <ul>
+      <li>Best Graduating Student, Department of Computer Science, GIMPA, 2023.</li>
+      <li>Dean’s List for 8/8 semesters.</li>
+      <li>GIMPA Staff Development Scholarship (40,000 GHS), 2019-2023.</li>
+    </ul>
   </section>
 
   <!-- Skills Section -->
   <section id="skills">
     <h2>Skills</h2>
     <ul>
-      <li>Programming: JAVA, Python, C++</li>
+      <li>Programming: Python, Java, C++, MATLAB</li>
       <li>Web Development: HTML, CSS, JavaScript</li>
-      <li>Database: MySQL, MongoDB</li>
-      <li>3D Modelling: Blender, Webots</li>
+      <li>Machine Learning Libraries: TensorFlow, Keras, Scikit-Learn</li>
+      <li>Data Analysis: Pandas, NumPy, SciPy</li>
+      <li>Computer Vision: OpenCV, Dlib</li>
+      <li>Development Tools: Git, Jupyter Notebooks, Google Colab, Linux</li>
     </ul>
   </section>
 
   <!-- Certifications Section -->
   <section id="certifications">
     <h2>Certifications</h2>
-    <p>Certified in Cybersecurity (CC), August 2024, ISC2</p>
+    <p>Certified in Cybersecurity (CC), August 2024 - ISC2.</p>
   </section>
 
   <!-- Contact Section -->
@@ -89,36 +108,14 @@
     <p>&copy; 2024 Alfred Nabio</p>
   </footer>
 
-  <!-- JavaScript for Dark Mode and Scroll Animations -->
+  <!-- JavaScript for Dark Mode -->
   <script>
-    // Dark Mode Toggle
     const toggleButton = document.getElementById('dark-mode-toggle');
     const body = document.body;
 
     toggleButton.addEventListener('click', () => {
       body.classList.toggle('dark-mode');
     });
-
-    // Scroll Animations
-    const sections = document.querySelectorAll('section');
-    const options = {
-      threshold: 0.1
-    };
-
-    const observer = new IntersectionObserver(function(entries, observer) {
-      entries.forEach(entry => {
-        if (!entry.isIntersecting) {
-          return;
-        }
-        entry.target.classList.add('animate');
-        observer.unobserve(entry.target);
-      });
-    }, options);
-
-    sections.forEach(section => {
-      observer.observe(section);
-    });
   </script>
-
 </body>
 </html>
