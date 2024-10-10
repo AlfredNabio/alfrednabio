@@ -1,3 +1,4 @@
+/* General Styles */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -11,20 +12,131 @@ header {
   text-align: center;
 }
 
+.header-content h1 {
+  margin: 0;
+}
+
 nav a {
   color: white;
   margin: 0 10px;
   text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
+nav a:hover {
+  background-color: #007BFF;
+  transform: scale(1.1);
+  color: white;
+}
+
+button {
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Hero Section */
+#hero {
+  background-image: url('https://source.unsplash.com/1600x900/?technology,computer');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero-content h1 {
+  color: white;
+  font-size: 3em;
+  font-weight: bold;
+}
+
+.hero-content p {
+  color: white;
+  font-size: 1.5em;
+}
+
+/* Section Styles */
 section {
   padding: 20px;
   margin: 20px;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.6s ease-in-out;
 }
 
+section.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.project-card {
+  background-color: #f8f8f8;
+  border: 2px solid #333;
+  padding: 20px;
+  width: 300px;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.project-card a {
+  color: #007BFF;
+  text-decoration: none;
+}
+
+/* Footer */
 footer {
   background-color: #333;
   color: white;
   text-align: center;
   padding: 10px;
+}
+
+/* Dark Mode */
+body.dark-mode {
+  background-color: #121212;
+  color: #f0f0f0;
+}
+
+body.dark-mode header, body.dark-mode footer {
+  background-color: #1f1f1f;
+}
+
+body.dark-mode a {
+  color: #bb86fc;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 2.5em;
+  }
+
+  #projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project-card {
+    width: 90%;
+  }
 }
